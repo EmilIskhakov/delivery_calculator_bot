@@ -1,6 +1,7 @@
 import os
 import asyncio
 from aiogram import Bot, Dispatcher, types
+from aiogram.filters import Command  # Добавляем импорт Command
 from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_application
 from aiohttp import web
 
@@ -19,7 +20,7 @@ bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 
 # Обработчик команды /start
-@dp.message(Command("start"))
+@dp.message(Command("start"))  # Теперь Command корректно работает
 async def start(message: types.Message):
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(
