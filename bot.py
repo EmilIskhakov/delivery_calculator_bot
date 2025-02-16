@@ -23,7 +23,7 @@ async def start(message: types.Message):
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(
             text="Открыть форму",
-            web_app=types.WebAppInfo(url="https://delivery-calculator-1.onrender.com")  # Замените на ваш URL
+            web_app=types.WebAppInfo(url="https://emiliskhakov.github.io/delivery_calculator/index.html")  # Замените на ваш URL
         )]
     ])
     await message.reply("Нажмите кнопку, чтобы открыть форму:", reply_markup=keyboard)
