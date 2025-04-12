@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 import os
 
 
-API_TOKEN = '7668930405:AAHKKrLILpoQ5x8h9TW0Ttou2KCikqxEOD8'
+API_TOKEN = '7709869722:AAGlqn3aJ9SXmpHf6jZdBwSOmpWk0UN7hW8'
 
 
 # Инициализация бота и хранилища состояний
